@@ -8,7 +8,7 @@
     overflow: hidden;
     position: relative;
     background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(146,226,208,1) 100%);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(146,210,226,0.5928965336134453) 100%);
 }
 .banner .slider{
     position: absolute;
