@@ -1,75 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linda Mukundwa</title>
-    <style>
-        
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            background-color: #D2D2D2;
-            background-image:
-            repeating-linear-gradient(
-                to right, transparent 0 100px,
-                #25283b22 100px 101px
-            ),
-            repeating-linear-gradient(
-                to bottom, transparent 0 100px,
-                #25283b22 100px 101px
-            );
-        }
-        
-        body::before{
-            position: absolute;
-            width: min(1400px, 90vw);
-            top: 10%;
-            left: 50%;
-            height: 90%;
-            transform: translateX(-50%);
-            content: '';
-            background-image: url(images/bg.png);
-            background-size: 100%;
-            background-repeat: no-repeat;
-            background-position: top center;
-            pointer-events: none;
-        }
-    </style>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <div class="banner">
-        <div class="slider" style="--quantity: 10">
-            <div class="item" style="--position: 1"><img src="images/image1.jpeg" alt=""></div>
-            <div class="item" style="--position: 2"><img src="images/image2.jpeg" alt=""></div>
-            <div class="item" style="--position: 3"><img src="images/image3.jpeg" alt=""></div>
-            <div class="item" style="--position: 4"><img src="images/image4.jpeg" alt=""></div>
-            <div class="item" style="--position: 5"><img src="images/image5.jpeg" alt=""></div>
-            <div class="item" style="--position: 6"><img src="images/image6.jpeg" alt=""></div>
-            <div class="item" style="--position: 7"><img src="images/image7.jpeg" alt=""></div>
-            <div class="item" style="--position: 8"><img src="images/image8.jpeg" alt=""></div>
-            <div class="item" style="--position: 9"><img src="images/image9.jpeg" alt=""></div>
-            <div class="item" style="--position: 10"><img src="images/image10.jpeg" alt=""></div>
-        </div>
-        <div class="content">
-            <h1 data-content="Linda Mukundwa">
-                Linda Mukundwa
-            </h1>
-            <div class="author">
-                <h2>E. May 2026</h2>
-                <p><b>Aspiring Software Engineer</b></p>
-                <p>
-                    Hello! I'm interested in all things computing and currently looking for software engineering internships!
-                </p>
-            </div>
-            <div class="model"></div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="bdayStyle.css" />
+  </head>
+  <body>
     </div>
-    
-</body>
+    <canvas id="confetti"></canvas>
+    <div class="birthdayCard">
+      <div class="cardFront">
+        <h3 class="happy">HAPPY BIRTHDAY</h3>
+        <div class="balloons">
+          <div class="balloon-1"></div>
+          <div class="balloon-2"></div>
+          <div class="balloon-3"></div>
+          <div class="balloon-4"></div>
+          <div class="balloon-5"></div>
+        </div>
+      </div>
+      <div class="cardInside">
+        <h3 class="back">HAPPY BIRTHDAY</h3>
+        <p>Dear Dad,</p>
+        <p>
+          Happy Birthday Dad! Even though I can't celebrate with you, I want you to know how much I truly love 
+          and appreciate you. You are one of the most kind, loving, generous, fun, and determined people I have ever known.
+          I thank God everyday that I was blessed with an amazing father like you and look up to you. You
+          are a a great person who deserves a great day today. Nakupenda sana!! 
+        </p>
+        <p>Love, Linda</p>
+      </div>
+      <div>
+        <button id="button" class="button-53" role="button">Celebrate!!!</button>
+        <audio controls autoplay id="music"><source src='particula.mp3' type="audio/mpeg"></audio>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
