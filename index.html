@@ -3,73 +3,342 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linda Mukundwa</title>
-    <style>
-        
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            background-color: #D2D2D2;
-            background-image:
-            repeating-linear-gradient(
-                to right, transparent 0 100px,
-                #25283b22 100px 101px
-            ),
-            repeating-linear-gradient(
-                to bottom, transparent 0 100px,
-                #25283b22 100px 101px
-            );
-        }
-        
-        body::before{
-            position: absolute;
-            width: min(1400px, 90vw);
-            top: 10%;
-            left: 50%;
-            height: 90%;
-            transform: translateX(-50%);
-            content: '';
-            background-image: url(images/bg.png);
-            background-size: 100%;
-            background-repeat: no-repeat;
-            background-position: top center;
-            pointer-events: none;
-        }
-    </style>
-    <link rel="stylesheet" href="style.css">
+    <title>Linda Mukundwa - Aspiring Software Engineer</title>
+    <link href='styles.css' rel='stylesheet'>
 </head>
 <body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Linda Mukundwa</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="banner">
-        <div class="slider" style="--quantity: 10">
-            <div class="item" style="--position: 1"><img src="images/image1.jpeg" alt=""></div>
-            <div class="item" style="--position: 2"><img src="images/image2.jpeg" alt=""></div>
-            <div class="item" style="--position: 3"><img src="images/image3.jpeg" alt=""></div>
-            <div class="item" style="--position: 4"><img src="images/image4.jpeg" alt=""></div>
-            <div class="item" style="--position: 5"><img src="images/image5.jpeg" alt=""></div>
-            <div class="item" style="--position: 6"><img src="images/image6.jpeg" alt=""></div>
-            <div class="item" style="--position: 7"><img src="images/image7.jpeg" alt=""></div>
-            <div class="item" style="--position: 8"><img src="images/image8.jpeg" alt=""></div>
-            <div class="item" style="--position: 9"><img src="images/image9.jpeg" alt=""></div>
-            <div class="item" style="--position: 10"><img src="images/image10.jpeg" alt=""></div>
+    <section id="home" class="hero">
+        <div class="particles"></div>
+        <div class="hero-content">
+            <h1>Linda Mukundwa</h1>
+            <p class="hero-subtitle">Aspiring Software Engineer & Computer Science Student</p>
+            <p class="hero-description">
+                Passionate about creating innovative solutions through code. Currently pursuing my Bachelor's in Computer Science at Marist University with experience in full-stack development, machine learning, and mobile app development.
+            </p>
+            <a href="#about" class="cta-button">Explore My Work</a>
         </div>
-        <div class="content">
-            <h1 data-content="Linda Mukundwa">
-                Linda Mukundwa
-            </h1>
-            <div class="author">
-                <h2>E. May 2026</h2>
-                <p><b>Aspiring Software Engineer</b></p>
-                <p>
-                    Hello! I'm interested in all things computing and currently looking for software engineering internships!
-                </p>
+    </section>
+
+    <section id="about" class="section">
+        <div class="about fade-in">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Computer Science student at Marist University with a minor in Information Technology, expected to graduate in May 2026. Currently working as a Software Engineering Intern at IBM, where I've refactored core systems and improved user experiences through innovative UI/UX design.
+                    </p>
+                    <br>
+                    <p>
+                        My passion lies in developing solutions that make a real impact. From building melanoma detection models to creating meal-prepping apps for college students, I love combining technical skills with creative problem-solving to address real-world challenges.
+                    </p>
+                    <br>
+                    <p>
+                        I'm actively involved in leadership roles across multiple organizations, including serving as Vice President of the Computer Society and President of the National Society of Black Engineers.
+                    </p>
+                </div>
+                <div class="about-image floating">
+                    <img class="about-image floating" src="images/myself.jpg" alt="Description of the image">
+                </div>
             </div>
-            <div class="model"></div>
         </div>
-    </div>
-    
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Swift</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">TypeScript</span>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">
+                    <h3>Web Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Angular</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Three.js</span>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">
+                    <h3>Developer Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Xcode</span>
+                        <span class="skill-tag">Wireshark</span>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">
+                    <h3>Data Science & ML</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Matplotlib</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="section">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <h3>Melanoma ABCD Diagnosis Model</h3>
+                    <p>Evaluating diagnostic accuracy of melanoma detection models using CNN trained on 2,000 annotated dermoscopy images. Improved model reliability by 15% through advanced balancing techniques.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">Kaggle</span>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <h3>Thesis & Dishes</h3>
+                    <p>Meal-prepping mobile app for college students using Swift, integrating 10K+ recipes from OpenFoodFacts and Edamam APIs to provide budget and time-conscious meal recommendations.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">APIs</span>
+                        <span class="tech-tag">iOS</span>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <h3>AirAware</h3>
+                    <p>Hackathon project focused on social good - developed a collaborative web application for preventative care by optimizing features that scan 600+ areas for air quality data in underfunded communities.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="section">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-date">2025-2026</div>
+                    <div class="timeline-content">
+                        <h3>Software Engineering Intern / Co-op</h3>
+                        <h4>IBM Joint Study</h4>
+                        <p>Refactored 80% of core screens, cutting code complexity by 40% through Angular component modularization. Redesigned entire UI for mobile and desktop, improving user engagement through responsive design principles.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-date">2024-2025</div>
+                    <div class="timeline-content">
+                        <h3>Student Network Technician</h3>
+                        <h4>Marist University</h4>
+                        <p>Installed and configured Cisco Access Points across 7 floors for 80+ rooms. Managed network device registration for 5,000+ people and maintained 99% campus connectivity uptime.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-date">Summer 2024</div>
+                    <div class="timeline-content">
+                        <h3>Undergraduate Teaching Assistant</h3>
+                        <h4>Marist x NESCD SS ECHS Program</h4>
+                        <p>Guided 24 students through server-side programming, open-source frameworks, and MVC patterns. Led labs on Git, Node.js, and full-stack development while creating REST APIs for CRUD operations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>I'm always open to discussing new opportunities and interesting projects!</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <a href="mailto:lindamukundwa1409@gmail.com">lindamukundwa1409@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span>📱</span>
+                    <a href="tel:707-803-4783">707-803-4783</a>
+                </div>
+                <div class="contact-item">
+                    <span>💼</span>
+                    <a href="https://linkedin.com/in/LindaMukundwa" target="_blank">LinkedIn</a>
+                </div>
+                <div class="contact-item">
+                    <span>🐱</span>
+                    <a href="https://github.com/LindaMukundwa" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Show/hide navbar on scroll
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 100) {
+                navbar.classList.add('visible');
+            } else {
+                navbar.classList.remove('visible');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Create floating particles
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            
+            const size = Math.random() * 4 + 2;
+            particle.style.width = size + 'px';
+            particle.style.height = size + 'px';
+            
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 6 + 's';
+            particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+            
+            return particle;
+        }
+
+        const particlesContainer = document.querySelector('.particles');
+        for (let i = 0; i < 20; i++) {
+            particlesContainer.appendChild(createParticle());
+        }
+
+        // Project card interactions
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Skill card hover effects
+        document.querySelectorAll('.skill-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px) rotateX(5deg)';
+                this.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.15)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) rotateX(0deg)';
+                this.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.1)';
+            });
+        });
+
+        // Dynamic typing effect for hero section
+        const heroTitle = document.querySelector('.hero h1');
+        const titleText = 'Linda Mukundwa';
+        
+        function typeWriter(element, text, delay = 100) {
+            element.textContent = '';
+            element.style.opacity = '1';
+            
+            let i = 0;
+            const timer = setInterval(() => {
+                if (i < text.length) {
+                    element.textContent += text.charAt(i);
+                    i++;
+                } else {
+                    clearInterval(timer);
+                }
+            }, delay);
+        }
+
+        // Initialize typing effect after page load
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                typeWriter(heroTitle, titleText, 80);
+            }, 500);
+        });
+
+        // Add parallax effect to hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            const parallaxSpeed = 0.5;
+            
+            hero.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
+        });
+
+        // Add mouse movement effect to hero section
+        document.addEventListener('mousemove', (e) => {
+            const hero = document.querySelector('.hero-content');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            hero.style.transform = `translate(${x * 20 - 10}px, ${y * 20 - 10}px)`;
+        });
+    </script>
 </body>
 </html>

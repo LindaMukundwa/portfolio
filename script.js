@@ -1,15 +1,29 @@
-const button = document.querySelector('#button');
-const canvas = document.querySelector('#confetti');
-const happy = document.querySelector('.happy');
 
-const jsConfetti = new JSConfetti();
+document.addEventListener('DOMContentLoaded', () => {
+  const cta = document.querySelector('.cta');
+  cta.addEventListener('mouseenter', () => {
+    cta.style.boxShadow = '0 0 15px #00ffe1';
+  });
+  cta.addEventListener('mouseleave', () => {
+    cta.style.boxShadow = 'none';
+  });
 
-button.addEventListener('click', () => {
-    jsConfetti.addConfetti({
-        emojis: ['💰', '🇷🇼', '💥', '🇹🇿', '❤️', '🌸', '🥳','🍾','❤️‍🔥','🤩'],
-    }).then(() => jsConfetti.addConfetti())
-})
+  const projects = document.querySelectorAll('.project');
+  projects.forEach(project => {
+    project.addEventListener('mouseover', () => {
+      project.style.boxShadow = '0 0 20px #ff77e9';
+    });
+    project.addEventListener('mouseout', () => {
+      project.style.boxShadow = '';
+    });
+  });
 
-happy.addEventListener('click', () => {
-    window.location.href="https://www.casamigos.com/en-us";
-})
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+});
