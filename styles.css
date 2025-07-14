@@ -15,6 +15,16 @@ background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 23
   overflow-x: hidden;
 }
 
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1rem;
+  animation: bounce 2s infinite;
+}
+
 /* Hero Section */
 .hero {
   min-height: 100vh;
@@ -196,7 +206,8 @@ nav.visible {
 
 /* Skills Section */
 .skills {
-  background: #f8f9fa;
+  background: #EEAECA;
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
   padding: 100px 0;
 }
 
@@ -242,7 +253,8 @@ nav.visible {
 /* Projects Section */
 .projects {
   padding: 100px 0;
-  background: white;
+  background: #EEAECA;
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
 .projects-grid {
@@ -290,7 +302,8 @@ nav.visible {
 
 /* Experience Section */
 .experience {
-  background: #f8f9fa;
+  background: #EEAECA;
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
   padding: 100px 0;
 }
 
@@ -347,7 +360,8 @@ nav.visible {
 
 /* Contact Section */
 .contact {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #EEAECA;
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
   color: white;
   padding: 100px 0;
   text-align: center;
