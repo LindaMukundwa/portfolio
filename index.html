@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/faviconnLogo.png" type="image/x-icon">
     <title>Linda Mukundwa - Aspiring Software Engineer</title>
     <link href='styles.css' rel='stylesheet'>
 </head>
@@ -40,7 +41,7 @@
 
     <section id="about" class="section">
         <div class="about fade-in">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="about-section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
                     <p>
@@ -144,6 +145,16 @@
                         <span class="tech-tag">TypeScript</span>
                         <span class="tech-tag">Flask</span>
                         <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <h3>CompiLinda</h3>
+                    <p>Implemented a full compiler with lexical analysis, parsing, semantic analysis, and 6502a machine code generation compliant with the 6502a instruction set for execution on a SvegOS.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
                     </div>
                 </div>
             </div>
@@ -255,6 +266,28 @@
         document.querySelectorAll('.fade-in').forEach(el => {
             observer.observe(el);
         });
+
+        // Floating hearts animation
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.innerHTML = '♥';
+            heart.style.left = Math.random() * 100 + '%';
+            heart.style.animationDelay = Math.random() * 3 + 's';
+            heart.style.animationDuration = (Math.random() * 3 + 4) + 's';
+            document.getElementById('hearts').appendChild(heart);
+
+            // removes heart after animation
+            setTimeout(() => {
+                heart.remove();
+            }, 7000);
+        }
+
+        // creates hearts periodically
+        setInterval(createHeart, 2000);
+
+        // Smooth scrolling for better experience
+        document.documentElement.style.scrollBehavior = 'smooth';
 
         // Create floating particles
         function createParticle() {
